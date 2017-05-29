@@ -13,10 +13,15 @@ A solution set is:
 ]*/
 //
 
+#include <vector>
+#include <iostream>
+#include <algorithm>
+using namespace std;
+
 class Solution {
 public:
-    vector<vector<int>> threeSum(vector<int>& nums) {
-    	vector<vector<int>> result;
+    vector<vector<int> > threeSum(vector<int>& nums) {
+    	vector<vector<int> > result;
     	if(nums.empty())	return result;
     	//get sorted arr
         sort(nums.begin(),nums.end());
